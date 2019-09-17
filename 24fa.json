@@ -1,0 +1,89 @@
+{
+    "categories": [
+        {
+            "cid": 1,
+            "title": "美女",
+            "url": "https://www.24fa.top/MeiNv/index{pageStr:p{page:2}}.html"
+        }
+    ],
+    "disableHProxy": false,
+    "flag": "noRating|preloadGallery|waterfallAsGrid|waterfallAsList",
+    "galleryRule": {
+        "pictureRule": {
+            "item": {
+                "selector": "#content img"
+            },
+            "thumbnail": {
+                "fun": "attr",
+                "param": "src",
+                "regex": "../../(.*)",
+                "replacement": "https://www.24fa.top/$1",
+                "selector": "this"
+            },
+            "url": {
+                "fun": "attr",
+                "param": "src",
+                "regex": "../../(.*)",
+                "replacement": "https://www.24fa.top/$1",
+                "selector": "this"
+            }
+        }
+    },
+    "galleryUrl": "{idCode:}{pageStr:p{page:2}}.html",
+    "gid": 7,
+    "index": 0,
+    "indexRule": {
+        "cover": {
+            "fun": "attr",
+            "param": "src",
+            "regex": "../(.*)",
+            "replacement": "https://www.24fa.top/$1",
+            "selector": "img"
+        },
+        "idCode": {
+            "fun": "attr",
+            "param": "href",
+            "regex": "../(.*).html",
+            "replacement": "https://www.24fa.top/$1",
+            "selector": "this"
+        },
+        "item": {
+            "selector": "#dlNews a"
+        },
+        "title": {
+            "fun": "attr",
+            "param": "alt",
+            "selector": "img"
+        }
+    },
+        "searchRule": {
+                "cover": {
+            "fun": "attr",
+            "param": "src",
+            "regex": "(.*)_gzip.aspx",
+            "replacement": "https://www.24fa.top/$1",
+            "selector": ".imgcon img"
+        },
+        "idCode": {
+            "fun": "attr",
+            "param": "href",
+            "regex": "(.*).html",
+            "replacement": "https://www.24fa.top/$1",
+            "selector": "a"
+        },
+        "item": {
+            "selector": ".sResult"
+        },
+        "title": {
+            "fun": "text",
+            "selector": "a"
+        }
+        },
+    "indexUrl": "https://www.24fa.top",
+        "searchUrl": "https://www.24fa.top/search.aspx?{pageStr:page={page:2}&}keyword={keyword:}&where=title&sum=70",
+    "isGrid": false,
+    "loginUrl": "",
+    "sid": 244,
+    "title": "24FA",
+    "versionCode": 0
+}
