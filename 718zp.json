@@ -1,0 +1,49 @@
+{
+    "disableHProxy": false,
+    "flag": "onePicGallery|noRating|preloadGallery|waterfallAsGrid|waterfallAsList",
+    "galleryRule": {
+        "pictureRule": {
+            "item": {
+                "selector": ".article-content img"
+            },
+            "thumbnail": {
+                "fun": "attr",
+                "param": "src",
+                "selector": "this"
+            },
+            "url": {
+                "fun": "attr",
+                "param": "src",
+                "selector": "this"
+            }
+        }
+    },
+    "galleryUrl": "{idCode:}",
+    "gid": 7,
+    "index": 0,
+    "indexRule": {
+        "cover": {
+            "fun": "attr",
+            "param": "src",
+            "selector": ".thumb"
+        },
+        "idCode": {
+            "fun": "attr",
+            "param": "href",
+            "selector": ".buy"
+        },
+        "item": {
+            "selector": ".shop-item"
+        },
+        "title": {
+            "fun": "attr",
+            "param": "alt",
+            "selector": ".thumb"
+        }
+    },
+    "indexUrl": "http://www.718zp.com/?cate\u003d2\u0026page\u003d{pageStr:{page:1}}",
+    "isGrid": false,
+    "sid": 239,
+    "title": "718自拍",
+    "versionCode": 0
+}
