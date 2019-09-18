@@ -1,0 +1,79 @@
+{
+    "categories": [{
+        "cid": 1,
+        "title": "自拍",
+        "url": "http://sifangtu.site/list-9-{page:1}.html"
+    }, {
+        "cid": 2,
+        "title": "偷拍",
+        "url": "http://sifangtu.site/list-11-{page:1}.html"
+    }, {
+        "cid": 3,
+        "title": "GIF",
+        "url": "http://sifangtu.site/list-14-{page:1}.html"
+    }, {
+        "cid": 4,
+        "title": "动漫",
+        "url": "http://sifangtu.site/list-13-{page:1}.html"
+    }, {
+        "cid": 5,
+        "title": "亚洲",
+        "url": "http://sifangtu.site/list-1-{page:1}.html"
+    }, {
+        "cid": 6,
+        "title": "欧美",
+        "url": "http://sifangtu.site/list-8-{page:1}.html"
+    }, {
+        "cid": 7,
+        "title": "唯丝",
+        "url": "http://sifangtu.site/list-12-{page:1}.html"
+    }],
+    "disableHProxy": false,
+    "flag": "onePicGallery|noRating|preloadGallery|waterfallAsGrid|waterfallAsList",
+    "galleryRule": {
+        "pictureRule": {
+            "item": {
+                "selector": ".picimg img,.pp img"
+            },
+            "thumbnail": {
+                "fun": "attr",
+                "param": "src",
+                "selector": "this"
+            },
+            "url": {
+                "fun": "attr",
+                "param": "src",
+                "selector": "this"
+            }
+        }
+    },
+    "galleryUrl": "http://sifangtu.site/article-{idCode:}-{page:1}.html",
+    "gid": 7,
+    "index": 0,
+    "indexRule": {
+        "cover": {
+            "fun": "attr",
+            "param": "src",
+            "selector": "img"
+        },
+        "idCode": {
+            "fun": "attr",
+            "param": "href",
+            "regex": "http://sifangtu.site/article-(.*).html",
+            "selector": ".dl-pic"
+        },
+        "item": {
+            "selector": ".detail-list li"
+        },
+        "title": {
+            "fun": "attr",
+            "param": "alt",
+            "selector": "img"
+        }
+    },
+    "indexUrl": "http://sifangtu.site",
+    "isGrid": false,
+    "sid": 184,
+    "title": "私房图",
+    "versionCode": 0
+}
